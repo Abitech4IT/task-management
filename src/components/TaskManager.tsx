@@ -82,7 +82,7 @@ function TaskManager() {
   return (
     <Box display="flex" height="100vh">
       {/* Sidebar */}
-      <Stack direction="row">
+      <Stack direction="row" overflow="hidden">
         <Box
           sx={{
             width: "320px",
