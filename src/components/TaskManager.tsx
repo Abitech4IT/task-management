@@ -26,7 +26,7 @@ interface Task {
   completed: boolean;
 }
 
-function TaskList() {
+function TaskManager() {
   const [tasks, setTasks] = useState<Task[]>([
     { id: 1, name: "Training at the Gym", completed: true },
     { id: 2, name: "Play Paddle with friends", completed: false },
@@ -280,4 +280,4 @@ function TaskList() {
   );
 }
 
-export default TaskList;
+export default TaskManager;

@@ -1,7 +1,7 @@
-import TaskList from "./components/TaskList";
+import TaskManager from "./components/TaskManager";
 
 function App() {
-  return <TaskList />;
+  return <TaskManager />;
 }
 
 export default App;
