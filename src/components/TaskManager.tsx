@@ -88,6 +88,7 @@ function TaskManager() {
             width: "320px",
             backgroundColor: "#F3F3F3",
             borderRight: "10px #F3F3F3",
+            boxShadow: "0px 4px 4px 0px #00000026",
           }}
         >
           {/* Header Section */}
@@ -96,6 +97,7 @@ function TaskManager() {
               backgroundColor: "#3556AB",
               padding: "20px",
               color: "white",
+              boxShadow: "0px 4px 4px 0px #3556AB",
             }}
           >
             <Stack direction="row" spacing={2}>
@@ -123,7 +125,7 @@ function TaskManager() {
             }}
           >
             <img src="public/cup-avatar.svg" alt="John" />
-            <Typography fontSize={14} color="#071D55">
+            <Typography fontSize={14} color="#071D55" fontWeight="bold">
               Go Pro Upgrade Now
             </Typography>
             <Typography
@@ -173,6 +175,7 @@ function TaskManager() {
                   onClick={() => handleEditTask(task)}
                   variant="outlined"
                   size="small"
+                  sx={{ textTransform: "capitalize" }}
                 >
                   Edit
                 </Button>
@@ -221,7 +224,11 @@ function TaskManager() {
             <Button
               onClick={handleSave}
               variant="contained"
-              sx={{ backgroundColor: "#3B5998", width: "100px" }}
+              sx={{
+                backgroundColor: "#3B5998",
+                width: "100px",
+                textTransform: "capitalize",
+              }}
             >
               Save
             </Button>
@@ -229,13 +236,13 @@ function TaskManager() {
         </Dialog>
 
         {/* Main Content - Placeholder for Edit Area */}
-        <Box height="944px" width="635px">
+        <Box height="944px" width="935px">
           <Box
             sx={{
               backgroundColor: "#3556AB",
               padding: "20px",
               color: "white",
-              width: "635px",
+              width: "935px",
             }}
           >
             <Typography variant="h5" sx={{ textAlign: "center" }}>
@@ -258,7 +265,7 @@ function TaskManager() {
                 onClick={handleDelete}
                 variant="contained"
                 color="error"
-                sx={{ width: "100px" }}
+                sx={{ width: "100px", textTransform: "capitalize" }}
               >
                 Delete
               </Button>
@@ -267,8 +274,9 @@ function TaskManager() {
                 variant="contained"
                 sx={{
                   backgroundColor: "#3B5998",
-                  width: "400px",
+                  textTransform: "capitalize",
                 }}
+                fullWidth
               >
                 Save
               </Button>
